@@ -4,9 +4,9 @@ A Chrome Manifest V3 extension that finds prompt text on web pages and collects 
 
 ## Demo
 
-![Live Chrome demo: the installed extension scans example prompts in the original X article](docs/demo/prompt-library-demo.gif)
+![Live demo: scan the original X article in Chrome, then view the saved prompts in local Markdown and Notion](docs/demo/prompt-library-demo.gif)
 
-[Watch the MP4 clip](docs/demo/prompt-library-demo.mp4). These frames show the installed extension in Google Chrome with the original [A Field Guide to Fable: Finding Your Unknowns](https://x.com/trq212/article/2073100352921215386?lang=en) article. The article and extension popup were captured live, then arranged together so both remain legible. The 11 prompts had already been saved to the local Markdown file and Notion, so collecting them again demonstrates duplicate detection.
+[Watch the MP4 clip](docs/demo/prompt-library-demo.mp4). The walkthrough shows the installed extension scanning the original [A Field Guide to Fable: Finding Your Unknowns](https://x.com/trq212/article/2073100352921215386?lang=en) article in Google Chrome, then shows the actual saved Markdown file in Obsidian and the matching Notion page. It opens a case in each destination to show the prompt text. The 11 prompts had already been saved, so collecting them again demonstrates duplicate detection. Live captures were cropped and arranged for legibility.
 
 ## Install
 
