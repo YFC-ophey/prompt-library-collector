@@ -2,6 +2,12 @@
 
 A Chrome Manifest V3 extension that finds prompt text on web pages and collects it into a local Markdown file and a Notion page. It uses page structure and wording heuristics; it does not send page contents to an AI service.
 
+## Demo
+
+![Animated demo: scan a page, review four prompts, collect them, and see the Markdown grouped by webpage and case](docs/demo/prompt-library-demo.gif)
+
+[Watch the MP4 clip](docs/demo/prompt-library-demo.mp4). The recording uses a local page with selected public examples from [A Field Guide to Fable: Finding Your Unknowns](https://x.com/trq212/article/2073100352921215386?lang=en). It shows the real extension and generated Markdown in a fresh browser profile; no personal browser data or Notion credentials are used.
+
 ## Install
 
 1. Open `chrome://extensions`, turn on **Developer mode**, and click **Load unpacked**.
@@ -31,3 +37,5 @@ X articles use a read-only Draft.js article container. The detector supports its
 ## Development
 
 Run `npm install` and `npm test` for the extractor, formatting, and Notion request tests. `npm run smoke` loads the extension in Chrome for Testing; set `CHROME_BIN` if Playwright's bundled browser is not installed. The extension itself requires no build step or runtime dependencies.
+
+Run `npm run demo` to regenerate the GIF and MP4 with Playwright and FFmpeg. The script creates a temporary browser profile and writes intermediate screenshots to ignored `output/playwright/`.
