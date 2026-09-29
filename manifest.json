@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Library Collector",
+  "version": "0.1.6",
+  "description": "Collect prompts from web pages into a local Markdown file and a Notion page.",
+  "minimum_chrome_version": "120",
+  "permissions": ["activeTab", "scripting", "storage", "unlimitedStorage"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "host_permissions": ["https://api.notion.com/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_popup": "popup.html", "default_title": "Collect prompts" },
+  "options_page": "options.html"
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt Library Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="options">
+  <main class="settings-shell">
+    <header class="settings-header"><div class="brand-mark">✳</div><div><div class="eyebrow">PROMPT LIBRARY COLLECTOR</div><h1>Settings & library</h1><p>Connect your local file and Notion page, then collect prompts from the toolbar.</p></div></header>
+    <div class="settings-grid">
+      <section class="panel">
+        <div class="panel-icon">01</div><h2>Local Markdown file</h2>
+        <p>Choose a <code>.md</code> file once. New prompts are appended automatically while Chrome has file access.</p>
+        <div id="file-name" class="connection">No file selected</div>
+        <div class="button-row"><button id="choose-file" class="primary">Choose Markdown file</button><button id="reconnect-file" class="secondary">Reconnect file</button></div>
+      </section>
+      <section class="panel">
+        <div class="panel-icon">02</div><h2>Notion page</h2>
+        <p>Create an <a href="https://www.notion.so/profile/integrations" target="_blank" rel="noreferrer">internal connection</a>, share the target page with it, then enter its token and page URL. The connection needs insert and update content access.</p>
+        <label for="notion-page">Page URL or ID</label><input id="notion-page" type="text" autocomplete="off" placeholder="https://www.notion.so/…">
+        <label for="notion-token">Internal connection token</label><input id="notion-token" type="password" autocomplete="off" placeholder="Paste token (blank keeps saved token)">
+        <div class="button-row"><button id="save-notion" class="primary">Save Notion connection</button><button id="clear-notion" class="secondary">Disconnect</button></div>
+        <div id="notion-state" class="connection">Not connected</div>
+      </section>
+    </div>
+    <section class="panel library-panel"><div class="library-heading"><div><div class="panel-icon">03</div><h2>Collected prompts <span id="library-count">0</span></h2></div><div class="button-row"><button id="organize" class="secondary">Organize existing prompts</button><button id="retry" class="secondary">Retry pending sync</button></div></div><p id="status" class="status" role="status"></p><div id="group-titles" class="group-titles"></div><div id="library" class="library"></div></section>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

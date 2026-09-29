@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt Library Collector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup">
+  <header class="topbar">
+    <div class="brand-mark">✳</div>
+    <div><div class="eyebrow">YOUR RESEARCH TOOL</div><h1>Prompt Library</h1></div>
+    <button id="settings" class="icon-button" aria-label="Open settings" title="Settings">⚙</button>
+  </header>
+  <main>
+    <div id="page" class="page-chip">Loading page…</div>
+    <div class="actions">
+      <button id="scan" class="primary">Scan this page</button>
+      <button id="auto" class="secondary">Enable auto-collect</button>
+    </div>
+    <p id="status" class="status" role="status"></p>
+    <section class="section-heading"><h2>Found prompts <span id="count">0</span></h2><button id="select-all" class="link-button" hidden>Select all</button></section>
+    <div id="candidates" class="candidates"><p class="empty">Scan a page to find prompt text.</p></div>
+    <button id="save" class="primary save" disabled>Collect selected</button>
+    <div id="summary" class="summary"></div>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
