@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "smoke": "node tests/chrome-smoke.js",
-    "demo": "node scripts/record-demo.mjs"
+    "smoke": "node tests/chrome-smoke.js"
   },
   "devDependencies": {
     "jsdom": "^26.1.0",
